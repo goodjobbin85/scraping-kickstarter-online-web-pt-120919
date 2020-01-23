@@ -8,7 +8,7 @@ require "pry"
   Instance: <li class="project grid_4"> 
   title: <h2 class="bbcard_name"> strong a (project.css("h2.bbcard_name strong a").text)
   image_link: div class="project-thumbnail" <img alt="Photo-little" class="projectphoto-little"> project.css("div.project-thumbnail a img").attribute("src").value
-  description: <p class="bbcard_blurb>
+  description: <p class="bbcard_blurb> project.css("p.bbcard_blurb").text
   location: <ul class="project-meta"> a data-location
   percent_funded: <li class="first funded">
 =end
