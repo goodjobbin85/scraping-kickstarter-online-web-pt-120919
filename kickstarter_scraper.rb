@@ -10,7 +10,7 @@ require "pry"
   image_link: div class="project-thumbnail" <img alt="Photo-little" class="projectphoto-little"> project.css("div.project-thumbnail a img").attribute("src").value
   description: <p class="bbcard_blurb> project.css("p.bbcard_blurb").text
   location: <ul class="project-meta"> a data-location project.css("ul.project-meta").text
-  percent_funded: <li class="first funded"> project.css("ul.project-stats li.first.funded strong").text
+  percent_funded: <li class="first funded"> project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
 =end
 
 def create_project_hash
